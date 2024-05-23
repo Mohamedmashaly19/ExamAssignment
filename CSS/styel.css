@@ -1,0 +1,439 @@
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* start nav */
+#nav {
+  background-color: transparent;
+}
+
+#nav .collapse li a {
+  color: rgb(106,106,106);
+}
+
+.navbar-brand {
+  font-family: Montserrat, sans-serif;
+}
+
+/* end nav */
+
+/* start home */
+#home {
+  background-image: url(../IMG/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#home .rgba {
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#home h5 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+#nav .active::after {
+  content: "";
+  width: 75%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 8px;
+  left: 14%;
+}
+
+#home h1 {
+  font-size: 4rem;
+  font-weight: 230px;
+}
+
+.icom-item {
+  margin-top: 20px;
+  cursor: pointer;
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  i {
+    font-size: 12px;
+  }
+}
+.animati::after{
+    content: "";
+    animation: move  8s infinite alternate ;
+    
+}
+@keyframes move {
+   0%{content: "D|";}
+   2%{content: "De|";}
+   4%{content: "Dev|";}
+   6%{content: "Deve|";}
+   8%{content: "Deve|";}
+   10%{content: "Devel|";}
+   12%{content: "Develo|";}
+   14%{content: "Devolop|";}
+   16%{content: "Developer|";}
+
+   30%{content: "D |";}
+   32%{content: "De |";}
+   34%{content: "Des |";}
+   36%{content: "Desi |";}
+   38%{content: "Desig |";}
+   40%{content: "Design |";}
+   42%{content: "Designe |";}
+   45%{content: "Desiigner |";}
+
+   60%{content: "La |";}
+   62%{content: "Lar |";}
+   64%{content: "Larr |";}
+   66%{content: "Larry |";}
+   68%{content: "Larry |";}
+   70%{content: "Larry  |";}
+   72%{content: "Larry D |";}
+   74%{content: "Larry Da |";}
+   76%{content: "Larry Dan |";}
+   78%{content: "Larry Dani |";}
+   80%{content: "Larry Danie |";}
+   82%{content: "Larry Daniel |";}
+   84%{content: "Larry Daniele |";}
+   
+}
+
+/* end home */
+/* start about */
+
+#about .img-bgk::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  /* background-color: red; */
+  background-image: url(../IMG/images.png);
+  position: absolute;
+  bottom: -5%;
+  left: 20%;
+}
+
+#about .progress1 .parent {
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  border: 2px solid rgba(247, 247, 247, 0.284);
+}
+
+#about .progress1 .parent .web {
+  width: 95%;
+  background-color: rgb(28, 28, 28);
+  border-radius: 5px;
+  height: 50%;
+}
+
+#about .progress1 .parent .Development {
+  width: 90%;
+  background-color: rgb(28, 28, 28);
+  border-radius: 5px;
+  height: 50%;
+}
+
+#about .progress1 .parent .Branding {
+  width: 80%;
+  background-color: rgb(28, 28, 28);
+  border-radius: 5px;
+  height: 50%;
+}
+
+.a1 {
+  all: unset;
+  color: white;
+  background-color: rgb(28, 28, 28);
+  padding: 8px 35px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    border: 1px solid rgb(28, 28, 28);
+    background-color: white;
+    color: black;
+  }
+}
+
+#about .button .a2 {
+  all: unset;
+  /* background-color: rgb(28,28,28); */
+  padding: 8px 35px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(28, 28, 28);
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: rgb(28, 28, 28);
+  }
+}
+
+/* end about */
+
+/* start team */
+#team {
+  background-color: rgb(247, 247, 247);
+}
+
+#team .leyer {
+  background-color: rgb(90, 90, 90);
+  padding: 20px 0;
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+#team .img-hover {
+  background-color: rgba(249, 244, 244, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 1s;
+  transform: scale(-1);
+  opacity: 0;
+  margin: 5px;
+}
+#team .icom-item {
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  &:hover{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    i{
+      color: black;
+    }
+  }
+  i {
+    font-size: 20px;
+  }
+}
+
+#team .leyer-img:hover .img-hover {
+  transform: scale(1);
+  opacity: 1;
+}
+#team .leyer-img img {
+  transition: all 1s;
+}
+#team .leyer-img:hover img {
+  scale: 1.2;
+}
+
+/* end team */
+/* start Services */
+#Services {
+  background-color: rgb(247, 247, 247);
+}
+
+h2 {
+  z-index: 9999;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+
+  &::after {
+    content: "";
+    background-image: url(../IMG/images.png);
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    width: 14%;
+    height: 8px;
+  }
+}
+
+.custom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px -1px,
+    rgba(0, 0, 0, 0.02) 0px 2px 4px -1px;
+}
+
+#Services .leyer:hover .leyer-icon {
+  background-color: black;
+
+  i {
+    color: white;
+  }
+}
+
+#Services .leyer-icon {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(247, 247, 247);
+  transition: 1s;
+
+  i {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+/* end Services */
+
+/* start Portfolio */
+.Portfolio-ul {
+  margin: 20px auto;
+}
+.Portfolio-ul,
+.Portfolio-ul li {
+  border: none;
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+}
+.Portfolio-ul li {
+  margin: 20px 10px;
+}
+.Portfolio-ul li button {
+    all: unset;
+  font-size: 18px;
+  border: none !important;
+  font-weight: 800;
+  padding: 10px 0;
+}
+.Portfolio-ul li button:hover {
+color: black;
+}
+.Portfolio-ul li button.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  bottom: 0px;
+  background-color: black;
+  animation: fillTo100 1s ease forwards;
+}
+@keyframes fillTo100 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.icoon{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(28, 28, 28);
+    cursor: pointer;
+    i{
+        color: white;
+    }
+}
+.icoon:hover{
+    background-color: white; 
+    border: 1px solid black;
+    border-radius: 50%; 
+ i{
+    color: black;
+ }
+}
+.port-img{
+    transition:2s;
+}
+.im-hover{
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+.port-img:hover .im-hover{
+    opacity: 1;
+    margin: 10px;
+}
+
+/* end Portfolio */
+
+/* sratr Testimonials */
+
+#Testimonials {
+  /* background-color: ; */
+  padding: 100px 0;
+}
+
+#Testimonials .carousel-img {
+  width: 90px;
+  height: 90px;
+  margin: 20px auto;
+}
+
+.carousel-p {
+  width: 90%;
+  font-size: 1.1rem;
+  margin-inline: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#carsol-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 10px;
+}
+
+.carousel-indicators {
+  bottom: -10% !important;
+}
+/* end Testimonials */
+
+/* start footer */
+footer .foot-icon {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(247, 247, 247);
+  transition: 1s;
+
+  i {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+footer .leyer:hover .foot-icon {
+  background-color: black;
+
+  i {
+    color: white;
+  }
+}
+
+.input {
+  all: unset;
+  padding: 10px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 5px;
+}
+
+.foot {
+  background-color: rgb(28, 28, 28);
+}
